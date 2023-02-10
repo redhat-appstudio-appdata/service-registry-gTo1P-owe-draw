@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: apicurio-registry-1swl
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b4b1c9d0a8eda8830b027caa81decf794def165a3b2add4e977b04b670ee9ff7
+        name: container-image
+        resources: {}
+status: {}
